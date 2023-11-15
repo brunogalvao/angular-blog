@@ -1,5 +1,6 @@
 :root {
   --bg-color: #111111;
+  --text-color: #ffffff;
   --font-default: "Roboto", sans-serif;
 }
 
@@ -9,4 +10,9 @@
   box-sizing: border-box;
   font-family: var(--font-default);
   background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  text-decoration: none;
 }
