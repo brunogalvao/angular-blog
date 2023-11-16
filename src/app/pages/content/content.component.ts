@@ -8,22 +8,24 @@ import { dataFake } from '../../data/dataFake';
   styleUrls: ['./content.component.css'],
 })
 export class ContentComponent implements OnInit {
-  photoCover: string =
-    'https://br.web.img3.acsta.net/c_310_420/pictures/18/06/29/00/35/0101925.jpg';
-  contentTitle: string = 'titulo';
-  contentDescription: string = 'testando';
+  photoCover: string = '';
+  contentTitle: string = '';
+  contentDescription: string = '';
 
-  private id: string | null = '0';
+  private id: string | null = '';
 
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit(): void {
-    this.route.paramMap.subscribe((value) => {
-      this.id = value.get('id');
-    });
+    this.route.paramMap.subscribe((value) => (this.id = value.get('id')));
+    this.setValuestoComponent(this.id);
   }
 
-  setValuestoComponent(id: string) {
-    const result = dataFake.filter((article) => article.id);
+  setValuestoComponent(id: string | null) {
+    const result = dataFake.filter((article) => article.id == id)[0];
+
+    this.contentTitle = result.title;
+    this.contentDescription = result.description;
+    this.photoCover = result.photoCover;
   }
 }

@@ -20,7 +20,20 @@
   margin: 0.875rem 0 0.625rem;
 }
 
+.big-card__title > h1 > a {
+  transition: all 0.3s ease-in-out;
+}
+
+.big-card__title > h1 > a:hover {
+  color: darkgray;
+}
+
 .big-card__description > p > a {
   color: gray;
   font-size: 0.875rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.big-card__description > p > a:hover {
+  color: darkgray;
 }
