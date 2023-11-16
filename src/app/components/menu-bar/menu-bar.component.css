@@ -7,3 +7,11 @@
   margin-right: 1rem;
   list-style: none;
 }
+
+.container__menu-bar > ul > li > a {
+  transition: all 0.3s ease;
+}
+
+.container__menu-bar > ul > li > a:hover {
+  color: #d4d4d4;
+}
