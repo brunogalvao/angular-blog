@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px) {
+  .container__articles {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
