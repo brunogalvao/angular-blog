@@ -2,6 +2,7 @@
   --bg-color: #111111;
   --text-color: #ffffff;
   --font-default: "Roboto", sans-serif;
+  --redMarvel: #ed1b24;
 }
 
 * {
@@ -15,4 +16,10 @@
 
 a {
   text-decoration: none;
+}
+
+.separator > hr {
+  background-color: var(--redMarvel);
+  height: 1px;
+  border: 0;
 }

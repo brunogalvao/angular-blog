@@ -18,23 +18,27 @@
       cardDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus."
     ></app-big-card>
   </div>
+
   <div class="articles__others">
     <app-small-card
       Id="3"
       photoCover="https://www.tenhomaisdiscosqueamigos.com/wp-content/uploads/2021/07/loki-disney-e1626286003674.jpg"
       cardTitle="Loki tem a segunda temporada"
-    ></app-small-card>
+      [ultimoSmallCard]=(true)
+      ></app-small-card>
 
-    <app-small-card
+      <app-small-card
       Id="4"
       photoCover="https://uploads.jovemnerd.com.br/wp-content/uploads/2023/11/as_marvels_capa__qc22wv23-1210x544.jpg"
       cardTitle="As Marvels tem estreia prevista para 2023"
-    ></app-small-card>
+      [ultimoSmallCard]=(true)
+      ></app-small-card>
 
-    <app-small-card
+      <app-small-card
       Id="5"
       photoCover="https://cinepop.com.br/wp-content/uploads/2023/01/kang-o-conquistador-homem-formiga-3.webp"
       cardTitle="Kang o Conquistador será o novo vilão ?"
+      [ultimoSmallCard]=(false)
     ></app-small-card>
   </div>
 </div>

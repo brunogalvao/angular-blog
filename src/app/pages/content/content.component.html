@@ -6,14 +6,19 @@
   <div class="content__title">
     <h1>{{ contentTitle }}</h1>
 
-    <hr />
+    <div class="separator">
+      <hr />
+    </div>
   </div>
 
   <div class="content__description">
     <p>{{ contentDescription }}</p>
 
     <div class="voltar">
-      <a [routerLink]="['']"> << Voltar </a>
+      <a [routerLink]="['']">
+        <fa-icon [icon]="faArrowAltCircleLeft"></fa-icon>
+        Voltar
+      </a>
     </div>
   </div>
 

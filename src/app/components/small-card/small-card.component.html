@@ -1,9 +1,11 @@
 <div class="container__small-card">
   <div class="container__small-card-content">
     <div class="small-card__photo">
-      <img
-      src="{{ photoCover }}"
-      alt="Photo Principal">
+      <a [routerLink]="['content', Id]">
+        <img
+          src="{{ photoCover }}"
+          alt="Photo Principal" />
+      </a>
     </div>
     <div class="small-card__title">
       <h1>
@@ -12,7 +14,7 @@
     </div>
   </div>
 
-  <div class="container__small-card__separator">
+  <div class="separator" *ngIf="ultimoSmallCard">
     <hr />
   </div>
 

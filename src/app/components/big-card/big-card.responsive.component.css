@@ -2,12 +2,6 @@
   .container__big-card {
     width: 100%;
     height: auto;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    margin: 0rem 0rem 1.75rem 0rem;
   }
   .big-card__photo {
     width: 100%;
@@ -19,5 +13,8 @@
     width: 100%;
     min-width: 400px;
     object-fit: cover;
+  }
+  .separator {
+    display: block;
   }
 }

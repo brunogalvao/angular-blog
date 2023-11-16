@@ -12,4 +12,7 @@
 
 .container__menu-title > hr {
   margin: 1.25rem 0;
+  background-color: var(--redMarvel);
+  height: 1px;
+  border: 0;
 }

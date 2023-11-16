@@ -4,15 +4,22 @@
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   justify-content: flex-start;
   margin: 0rem 1rem 1rem 0rem;
+  padding: 0.825rem 0.825rem 0px 0px;
 }
 
-.big-card__photo > img {
+.big-card__photo > a > img {
   width: 100%;
   min-width: 400px;
   object-fit: cover;
+  border-radius: 0.625rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.big-card__photo > a > img:hover {
+  border-radius: 0rem;
 }
 
 .big-card__title > h1 {
@@ -26,6 +33,10 @@
 
 .big-card__title > h1 > a:hover {
   color: darkgray;
+}
+
+.big-card__description {
+  padding-bottom: 0.825rem;
 }
 
 .big-card__description > p > a {
