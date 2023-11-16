@@ -1,0 +1,43 @@
+.container__content {
+  width: 100%;
+  height: 100%;
+
+  margin-top: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__cover {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.content__cover > img {
+  border: 5px solid gray;
+  border-radius: 5px;
+  width: auto;
+  height: 300px;
+  object-fit: cover;
+}
+
+.content__title {
+  margin-top: 1rem;
+}
+
+.content__description {
+  margin: 1.25rem 0;
+}
+
+.content__description > p {
+  width: 500px;
+
+  color: gray;
+}
+
+.voltar {
+  margin-top: 1rem;
+}
