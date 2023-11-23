@@ -35,7 +35,8 @@
 
 .content__description > p {
   width: 500px;
-
+  font-size: 0.925rem;
+  line-height: 1.4;
   color: gray;
 }
 
